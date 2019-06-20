@@ -16,7 +16,7 @@
         <a class="navbar-brand mynav" href="{% url 'home' %}">Social Media</a>
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
-          <li><a href="#">Post</a></li>
+          <li><a href="{% url 'posts:create' %}">Post</a></li>
           <li><a href="{% url 'groups:Group_list' %}">Groups</a></li>
           <li><a href="{% url 'groups:create' %}">Create Grpoups</a></li>
           <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
